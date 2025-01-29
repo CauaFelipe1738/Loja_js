@@ -36,7 +36,7 @@ function calcularPreco(){
     let quilo = Number(inQuilo.value).toFixed(2)
     let consumo = Number(inConsumo.value)
 
-    let valor = quilo * consumo
+    let valor = Math.ceil((consumo/15)) * quilo
     outValor.innerHTML = "Valor a pagar R$"+valor
 }
 </script>
