@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Promoção farmácia</h1>
-    <p>
-        Remédio:
-        <input type="text" id="inQuilo">
-    </p>
+    <div class="title">
+        <h1>Promoção farmácia</h1>
+        <img src="./img/green-circle-capsule-and-cross.webp" alt="" class="logo">
+    </div>
+    <div class="box one-box">
+        <h3 id="outValor">&#8204;</h3>
 
-    <p>
-        Preço:
-        <input type="text" id="inConsumo">
-    </p>
+        <div class="container">
+            <p>
+                <div class="text">Remédio:</div>
+                <input type="text" id="inQuilo" class="input">
+            </p>
 
-    <p>
-        <input type="button" value="Mostrar Promoção" id="btCalcular">
-        <h3 id="outValor"></h3>
-    </p>
+            <p>
+                <div class="text">Preço:</div>
+                <input type="text" id="inConsumo" class="input">
+            </p>
+        </div>
+        <p>
+            <input type="button" value="Mostrar Promoção" id="btCalcular" class="one">
+            
+        </p>
+        
+    </div>
 </body>
 
 <script>

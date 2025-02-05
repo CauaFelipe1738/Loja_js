@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Lan House</h1>
-    <p>
-        Preço por minuto:
-        <input type="text" id="inQuilo">
-    </p>
+    <div class="title">
+        <h1 class="h1-two">Lan House</h1>
+        <img src="./img/lan-house.jpg" alt="" class="logo">
+    </div>
 
-    <p>
-        Minutos usados pelo Cliente:
-        <input type="text" id="inConsumo">
-    </p>
+    <div class="box two-box">
+        <h3 id="outValor">&#8204;</h3>
+        <div class="container">
+            <p>
+                <div class="text">Preço por minuto:</div> <br>
+                <input type="text" id="inQuilo" class="input">
+            </p>
 
-    <p>
-        <input type="button" value="Calcular" id="btCalcular">
-        <h3 id="outValor"></h3>
-    </p>
+            <p>
+                <div class="text">Minutos usados pelo Cliente:</div> <br>
+                <input type="text" id="inConsumo" class="input">
+            </p>
+        </div>
+
+        <p>
+            <input type="button" value="Calcular" id="btCalcular" class="two">
+        </p>
+    </div>
 </body>
 
 <script>

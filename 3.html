@@ -3,25 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Promoção farmácia</h1>
-    <p>
-        Produto:
-        <input type="text" id="inQuilo">
-    </p>
+    <div class="title">
+        <h1>Promoção Supermercado</h1>
+        <img src="./img/Carrinho_de_Compras-logo-F251151A71-seeklogo.com.png" alt="" class="logo">
+    </div>
+    <div class="box three-box">
+        <h3 id="outValor" class="three-out">&#8204;</h3>
+        <style>
+            #outValor{
+                margin-bottom: .7rem;
+            }
+        </style>
+        <h3 id="outDesconto">&#8204;</h3>
+        <div class="container">
+            <p>
+                <div class="text">Produto:</div> <br>
+                <input type="text" id="inQuilo" class="input">
+            </p>
 
-    <p>
-        Preço:
-        <input type="text" id="inConsumo">
-    </p>
-
-    <p>
-        <input type="button" value="Mostrar Promoção" id="btCalcular">
-        <h3 id="outValor"></h3>
-        <h3 id="outDesconto"></h3>
-    </p>
+            <p>
+                <div class="text">Preço:</div> <br>
+                <input type="text" id="inConsumo" class="input">
+            </p>
+        </div>
+        <p>
+            <input type="button" value="Mostrar Promoção" id="btCalcular" class="three">
+        </p>
+    </div>
 </body>
 
 <script>
